@@ -1,6 +1,6 @@
 {
   "name": "fakenews",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Auto-populate Washington Post news content",
   "repository": "https://github.com/JasonBernert/fake-news-sketchplugin.git",
   "engines": {
