@@ -1,0 +1,25 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "suppliesData": true,
+  "commands": [
+    {
+      "script": "./dataProvider.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "Shutdown": "onShutdown",
+          "RandomHeadline": "onRandomHeadline",
+          "RandomDescription": "onRandomDescription",
+          "RandomLabel": "onRandomLabel",
+          "RandomByline": "onRandomByline",
+          "RandomPhotoCaption": "onRandomPhotoCaption"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Fake News"
+  }
+}

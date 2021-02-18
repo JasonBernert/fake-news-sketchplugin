@@ -1,0 +1,27 @@
+{
+  "name": "fakenews",
+  "version": "0.1.0",
+  "description": "Auto-populate Washington Post news content",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "Fake News",
+    "manifest": "src/manifest.json",
+    "main": "fakenews.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.4"
+  },
+  "author": "The Washington Post"
+}
